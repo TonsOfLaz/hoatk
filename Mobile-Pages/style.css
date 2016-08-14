@@ -7,6 +7,8 @@ body{background: #ffffff;}
 }
 .header-design{background: url(img/design.png) bottom left repeat-x;}
 .header{padding-bottom: 15px;}
+.header-sm{padding-bottom: 0;}
+.header-fixed-top{position: fixed; top: 0;left: 0; right: 0;}
 /*Navigation CSS*/
  .navbar-inverse{ 
     background: transparent;
@@ -53,9 +55,7 @@ p{
 /*Page 2*/
 
 .b-day{
-    position: absolute;
-    top: 15px;
-    left: 40%;
+    text-align: center;
     color: #ffffff;
     font-size: 18px;
 }
@@ -74,9 +74,16 @@ p{
 .gallary .row, .gallary .col-xs-6 {padding: 0;}
 
 .text-block h2{color: #ffffff;}
+.gall-clear{margin-bottom:65px;}
 .footer {
     background: #f0f0f0;
-    margin: 30px 15%;
+    padding: 15px;
+}
+.footer-fixed{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 /*Buttons CSS*/
 .btn{
@@ -85,6 +92,7 @@ p{
     font-size: 18px;
     color: #ffffff !important;
 }
+.btn-add{width: 180px; height: 35px; line-height: 25px;}
 .btn-gall{
     height: 30px;
     line-height: 10px;
@@ -123,12 +131,10 @@ p{
 	p{font-size: 12px;}
 
     .navbar .container{padding: 0;}
-    .b-day {left: 30%!important;}
     .navbar-toggle{margin-right: 0!important;}
 }
 
 @media only screen and (max-width: 360px){
-    .b-day {left: 25%!important;}
     .overlay-block .text-block{left: 20%; right: 20%;}
 }
 
