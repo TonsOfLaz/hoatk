@@ -55,6 +55,8 @@ p{
 /*Page 2*/
 
 .b-day{
+    max-width: 250px;
+    margin: 0 auto;
     text-align: center;
     color: #ffffff;
     font-size: 18px;
