@@ -58,20 +58,35 @@ p{
     text-align: center;
     color: #ffffff;
     font-size: 18px;
-    margin-top:-18px;
+    margin-top: -18px;
+    position: relative;
+    z-index: 9999;
 }
-.b-day a{color: #ffffff;}
+.b-day a{color: #ffffff; }
 .b-heading{margin: 0 10px;}
 .overlay-block img{
    border: 0;
 
 }
-.overlay-block .text-block {
+
+.img-block:hover .overlay-block{  
+    cursor: pointer;
+    background: url(img/overlay2.png);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.img-block:hover img{
+    opacity: .5;
+}
+.text-block {
     position: absolute;
     bottom: 20%;
     right: 25%;
     left: 25%;
 }
+
 .gallary .row, .gallary .col-xs-6 {padding: 0;}
 
 .text-block h2{color: #ffffff;}
@@ -93,7 +108,7 @@ p{
     font-size: 18px;
     color: #ffffff !important;
 }
-.btn-add{width: 180px; height: 35px; line-height: 25px;}
+.btn-add{width: 200px; height: 45px; line-height: 35px;}
 .btn-gall{
     height: 30px;
     line-height: 10px;
