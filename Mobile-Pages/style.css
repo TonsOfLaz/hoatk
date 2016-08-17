@@ -7,7 +7,7 @@ body{background: #ffffff;}
 }
 .header-design{background: url(img/design.png) bottom left repeat-x;}
 .header{padding-bottom: 15px;}
-.header-sm{padding-bottom: 0;}
+.header-sm{padding-bottom: 10px;}
 .header-fixed-top{position: fixed; top: 0;left: 0; right: 0;}
 /*Navigation CSS*/
  .navbar-inverse{ 
