@@ -71,7 +71,7 @@ p{
 
 }
 
-.img-block:hover .overlay-block{  
+.img-block .overlay-block{  
     cursor: pointer;
     background: url(img/overlay2.png);
     -webkit-background-size: cover;
@@ -79,12 +79,12 @@ p{
     -o-background-size: cover;
     background-size: cover;
 }
-.img-block:hover img{
-    opacity: .5;
+.img-block img{
+    opacity: .7;
 }
 .text-block {
     position: absolute;
-    bottom: 20%;
+    bottom: 18%;
     right: 25%;
     left: 25%;
 }
