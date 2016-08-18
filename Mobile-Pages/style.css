@@ -1,4 +1,6 @@
 body{background: #ffffff;}
+.bg-none{background: #ffffff!important;}
+.clearfix{clear: both;}
 
 /*Header CSS*/
 .outer-container{
@@ -7,12 +9,12 @@ body{background: #ffffff;}
 }
 .header-design{background: url(img/design.png) bottom left repeat-x;}
 .header{padding-bottom: 15px;}
-.header-sm{padding-bottom: 10px;}
 .header-fixed-top{position: fixed; top: 0;left: 0; right: 0;}
 /*Navigation CSS*/
  .navbar-inverse{ 
     background: transparent;
     border: transparent;
+    margin-left: 10%;
     
 }
 .navbar-inverse .navbar-toggle{border: 0;}
@@ -37,9 +39,7 @@ p{
 .welcome{padding: 50px 0;}
 .rounded {border-radius: 25px;}
 /*Form CSS*/
-.form-login{
-	padding-bottom: 20px;
-}
+.form-login{padding-bottom: 20px;}
 .form-login a{
 	font-size: 12px;
 	margin: 15px 0;
@@ -54,22 +54,28 @@ p{
 
 /*Page 2*/
 
+.back-sp{
+    margin-top: -15px;
+    cursor: pointer;
+}
+.back-sp .fa{
+    font-size: 18px;
+    color: #ffffff;
+    cursor: pointer;
+}
 .b-day{
     max-width: 250px;
     margin: 0 auto;
     text-align: center;
     color: #ffffff;
     font-size: 18px;
-    margin-top: -18px;
+    margin-top: -22px;
     position: relative;
     z-index: 9999;
 }
 .b-day a{color: #ffffff; }
 .b-heading{margin: 0 10px;}
-.overlay-block img{
-   border: 0;
-
-}
+.overlay-block img{border: 0;}
 
 .img-block .overlay-block{  
     cursor: pointer;
@@ -79,29 +85,134 @@ p{
     -o-background-size: cover;
     background-size: cover;
 }
-.img-block img{
-    opacity: .7;
-}
+.img-block img{opacity: .7;}
 .text-block {
     position: absolute;
     bottom: 18%;
     right: 25%;
     left: 25%;
 }
-
 .gallary .row, .gallary .col-xs-6 {padding: 0;}
 
 .text-block h2{color: #ffffff;}
-.gall-clear{margin-bottom:65px;}
+.gall-clear{margin-bottom:75px;}
+
+/*footer fixed*/
 .footer {
     background: #f0f0f0;
-    padding: 15px;
+    padding: 20px 15px;
 }
 .footer-fixed{
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
+}
+/*page 3*/
+
+/*Add image box CSS*/
+.add-page{padding-top: 30px;}
+.img-upload-box{
+    text-align: center;
+    padding: 40px;
+    background: #ebebeb;
+    border: 1px solid #9b9b9b;
+    max-width: 140px;
+    webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -o-border-radius: 9px;
+    border-radius: 9px;
+}
+.img-upload-box .fa{
+    font-size: 28px;
+    color: #bbbbbb;
+}
+.add-text a{
+    margin:80px 0 0 15px;
+    text-decoration: none; 
+    color: #9b9b9b;
+}
+.add-text a:hover{color: #616265;}
+.add-text a:before{
+     content:"• ";
+     font-size: 28px;
+     vertical-align: middle;
+}
+
+/*Form inputs*/
+label {color: #9b9b9b; text-transform: uppercase;}
+.custom-input{ 
+    font-size: 18px;
+    color: #000;
+    padding-left: 0;
+    outline: none;
+    background: none;
+  border: none !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+}
+.btn:focus, input:focus{outline: none;}
+
+/*Custom Radio buttons css*/
+
+label input[type="radio"] ~ i.fa.fa-circle-o{
+    color: #c8c8c8;    display: inline; vertical-align: middle;
+}
+label input[type="radio"] ~ i.fa.fa-dot-circle-o{
+    display: none; vertical-align: middle;
+}
+label input[type="radio"]:checked ~ i.fa.fa-circle-o{
+    display: none; vertical-align: middle;
+}
+label input[type="radio"]:checked ~ i.fa.fa-dot-circle-o{
+    color: #1465c1;    display: inline; vertical-align: middle;
+}
+label:hover input[type="radio"] ~ i.fa {color: #1465c1;}
+div[data-toggle="buttons"] .btn{
+    padding-left: 0;
+    padding-bottom: 15px;
+}
+div[data-toggle="buttons"] label {
+display: inline-block;
+padding: 6px 12px;
+margin-bottom: 0;
+font-size: 18px;
+font-weight: bold;
+line-height: 2em;
+text-align: left;
+white-space: nowrap;
+vertical-align: middle;
+cursor: pointer;
+background-color: none;
+border: 0px solid 
+#c8c8c8;
+border-radius: 3px;
+color: #000!important;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+}
+div[data-toggle="buttons"] label span{margin:0 45px 0 15px;}
+div[data-toggle="buttons"] label:hover {color: #7AA3CC;}
+
+div[data-toggle="buttons"] label:active, div[data-toggle="buttons"] label.active {
+-webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+  outline: none!important;
+}
+/*Form footer css*/
+.footer-form{
+    background-color: #e9e9eb; 
+    padding: 0 0 130px 0; 
+    margin-top: 30px;
+}
+.footer-form-inner{
+    background: url(img/design-grey.png) top left repeat-x;
+    padding: 20px 0;
 }
 /*Buttons CSS*/
 .btn{
@@ -110,7 +221,7 @@ p{
     font-size: 18px;
     color: #ffffff !important;
 }
-.btn-add{width: 200px; height: 45px; line-height: 35px;}
+.btn-add{width: 50%; height: 45px; line-height: 35px;}
 .btn-gall{
     height: 30px;
     line-height: 10px;
@@ -150,6 +261,7 @@ p{
 
     .navbar .container{padding: 0;}
     .navbar-toggle{margin-right: 0!important;}
+    .btn-add {width: 80%;}
 }
 
 @media only screen and (max-width: 360px){
